@@ -12,7 +12,8 @@ Pod::Spec.new do |s|
   s.preserve_paths      = 'Veacon.framework'
   s.public_header_files = 'Veacon.framework/Versions/A/Headers/*.h'
   s.vendored_frameworks = 'Veacon.framework'
-
+  
+  s.frameworks = 'CoreLocation', 'CoreBluetooth'
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/VeaconSDK/**"' }
   s.requires_arc = true
 end

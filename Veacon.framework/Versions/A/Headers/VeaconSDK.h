@@ -11,24 +11,21 @@
 @protocol VeaconDelegate <NSObject>
 @required
 - (void) customVeaconAction:(NSString*)key data:(NSString *)data;
-
+@optional
+- (void) didBluetoothDisabled;
 @end
 
 @interface VeaconSDK : NSObject
-{
-    id<VeaconDelegate> delegate;
-}
 
-@property (nonatomic,strong) id _delegate;
+@property (nonatomic, weak) id<VeaconDelegate> delegate;
 
-@property (strong, nonatomic) NSString *secretKey;
++ (void) configureWithSecretKey:(NSString*)secretKey;
 
-+ (VeaconSDK*) defaultVeaconSDK;
++ (BOOL) startVeaconMonitoring:(NSError**)error;
++ (void) stopVeaconMonitoring;
++ (BOOL) isMonitoringActive;
 
--(BOOL) initVeaconSDKWithSecret:(NSString*)secretKey;
--(BOOL) startVeaconService;
--(void) stopVeaconService;
++ (BOOL) startVeaconMode:(NSError**)error;
++ (void) stopVeaconMode;
 
--(BOOL) turnOnBeAVeacon;
--(void) turnOffBeAVeacon;
 @end

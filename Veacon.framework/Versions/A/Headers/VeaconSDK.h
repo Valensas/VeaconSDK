@@ -10,9 +10,9 @@
 
 @protocol VeaconDelegate <NSObject>
 @required
-- (void) customVeaconAction:(NSString*)key data:(NSString *)data;
+- (void) customVeaconAction:(NSString*)key data:(NSDictionary *)data;
 @optional
-- (void) didBluetoothDisabled;
+- (void) bluetoothDisabledAction;
 @end
 
 @interface VeaconSDK : NSObject
@@ -27,5 +27,8 @@
 
 + (BOOL) startVeaconMode:(NSError**)error;
 + (void) stopVeaconMode;
+
++ (BOOL) loggingMode;
++ (void) setLoggingMode:(BOOL)logging;
 
 @end

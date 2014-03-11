@@ -25,6 +25,7 @@
 
 + (BOOL) startVeaconMode:(NSError**)error;
 + (void) stopVeaconMode;
++ (BOOL) isVeaconModeActive;
 
 + (BOOL) loggingMode;
 + (void) setLoggingMode:(BOOL)logging;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VeaconSDK-latest"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.homepage     = "http://getveacon.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Valensas" => "info@getveacon.com" }

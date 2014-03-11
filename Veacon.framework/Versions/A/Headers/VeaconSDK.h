@@ -17,8 +17,6 @@
 
 @interface VeaconSDK : NSObject
 
-@property (nonatomic, weak) id<VeaconDelegate> delegate;
-
 + (void) configureWithSecretKey:(NSString*)secretKey;
 
 + (BOOL) startVeaconMonitoring:(NSError**)error;
@@ -30,5 +28,7 @@
 
 + (BOOL) loggingMode;
 + (void) setLoggingMode:(BOOL)logging;
+
++ (void) setDelegate:(id<VeaconDelegate>)delegate;
 
 @end

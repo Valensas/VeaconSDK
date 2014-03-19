@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @protocol VeaconDelegate <NSObject>
 @required
@@ -15,7 +17,11 @@
 - (void) bluetoothDisabledAction;
 @end
 
-@interface VeaconSDK : NSObject
+@interface VeaconSDK : NSObject<CLLocationManagerDelegate, CBPeripheralManagerDelegate>
+
+extern NSString * const VLVeaconModeUpdated;
+extern NSString * const VLVeaconNameUpdated;
+extern NSString * const VLVeaconName;
 
 + (void) configureWithSecretKey:(NSString*)secretKey;
 

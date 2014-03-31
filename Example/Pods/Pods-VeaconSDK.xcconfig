@@ -1,0 +1,2 @@
+PODS_VEACONSDK_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/VeaconSDK/**" "$(PODS_ROOT)/VeaconSDK"
+PODS_VEACONSDK_OTHER_LDFLAGS = -framework CoreBluetooth -framework CoreLocation -framework Veacon

@@ -1,0 +1,14 @@
+PODS:
+  - VeaconSDK (0.1.1)
+
+DEPENDENCIES:
+  - VeaconSDK (from `https://github.com/Valensas/VeaconSDK.git`)
+
+EXTERNAL SOURCES:
+  VeaconSDK:
+    :git: https://github.com/Valensas/VeaconSDK.git
+
+SPEC CHECKSUMS:
+  VeaconSDK: 984de259bfb114b0df020ec6598814bea401ea6f
+
+COCOAPODS: 0.29.0

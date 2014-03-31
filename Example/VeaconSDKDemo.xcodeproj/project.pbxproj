@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC8251CF18E5AE34008D7494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251CE18E5AE34008D7494 /* Foundation.framework */; };
+		DC8251D118E5AE34008D7494 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251D018E5AE34008D7494 /* CoreGraphics.framework */; };
+		DC8251D318E5AE34008D7494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251D218E5AE34008D7494 /* UIKit.framework */; };
+		DC8251D918E5AE34008D7494 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8251D718E5AE34008D7494 /* InfoPlist.strings */; };
+		DC8251DB18E5AE34008D7494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8251DA18E5AE34008D7494 /* main.m */; };
+		DC8251DF18E5AE34008D7494 /* VLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8251DE18E5AE34008D7494 /* VLAppDelegate.m */; };
+		DC8251E218E5AE34008D7494 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8251E018E5AE34008D7494 /* Main_iPhone.storyboard */; };
+		DC8251EA18E5AE34008D7494 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8251E918E5AE34008D7494 /* Images.xcassets */; };
+		DC8251F118E5AE34008D7494 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251F018E5AE34008D7494 /* XCTest.framework */; };
+		DC8251F218E5AE34008D7494 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251CE18E5AE34008D7494 /* Foundation.framework */; };
+		DC8251F318E5AE34008D7494 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8251D218E5AE34008D7494 /* UIKit.framework */; };
+		DC8251FB18E5AE34008D7494 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8251F918E5AE34008D7494 /* InfoPlist.strings */; };
+		DC8251FD18E5AE34008D7494 /* VeaconSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8251FC18E5AE34008D7494 /* VeaconSDKDemoTests.m */; };
+		DC82520818E5D4C3008D7494 /* VLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC82520718E5D4C3008D7494 /* VLTableViewController.m */; };
+		F767B8993D144BC193BE297D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30793172DA544FC091871C53 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC8251F418E5AE34008D7494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC8251C318E5AE34008D7494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC8251CA18E5AE34008D7494;
+			remoteInfo = VeaconSDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30793172DA544FC091871C53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		954C96E447094AD4B482CC0A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		DC8251CB18E5AE34008D7494 /* VeaconSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeaconSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8251CE18E5AE34008D7494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC8251D018E5AE34008D7494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC8251D218E5AE34008D7494 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC8251D618E5AE34008D7494 /* VeaconSDKDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeaconSDKDemo-Info.plist"; sourceTree = "<group>"; };
+		DC8251D818E5AE34008D7494 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8251DA18E5AE34008D7494 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC8251DC18E5AE34008D7494 /* VeaconSDKDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeaconSDKDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DC8251DD18E5AE34008D7494 /* VLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLAppDelegate.h; sourceTree = "<group>"; };
+		DC8251DE18E5AE34008D7494 /* VLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLAppDelegate.m; sourceTree = "<group>"; };
+		DC8251E118E5AE34008D7494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		DC8251E918E5AE34008D7494 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC8251EF18E5AE34008D7494 /* VeaconSDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeaconSDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC8251F018E5AE34008D7494 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DC8251F818E5AE34008D7494 /* VeaconSDKDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeaconSDKDemoTests-Info.plist"; sourceTree = "<group>"; };
+		DC8251FA18E5AE34008D7494 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8251FC18E5AE34008D7494 /* VeaconSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeaconSDKDemoTests.m; sourceTree = "<group>"; };
+		DC82520618E5D4C3008D7494 /* VLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLTableViewController.h; sourceTree = "<group>"; };
+		DC82520718E5D4C3008D7494 /* VLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC8251C818E5AE34008D7494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251D118E5AE34008D7494 /* CoreGraphics.framework in Frameworks */,
+				DC8251D318E5AE34008D7494 /* UIKit.framework in Frameworks */,
+				DC8251CF18E5AE34008D7494 /* Foundation.framework in Frameworks */,
+				F767B8993D144BC193BE297D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8251EC18E5AE34008D7494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251F118E5AE34008D7494 /* XCTest.framework in Frameworks */,
+				DC8251F318E5AE34008D7494 /* UIKit.framework in Frameworks */,
+				DC8251F218E5AE34008D7494 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC8251C218E5AE34008D7494 = {
+			isa = PBXGroup;
+			children = (
+				DC8251D418E5AE34008D7494 /* VeaconSDKDemo */,
+				DC8251F618E5AE34008D7494 /* VeaconSDKDemoTests */,
+				DC8251CD18E5AE34008D7494 /* Frameworks */,
+				DC8251CC18E5AE34008D7494 /* Products */,
+				954C96E447094AD4B482CC0A /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		DC8251CC18E5AE34008D7494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251CB18E5AE34008D7494 /* VeaconSDKDemo.app */,
+				DC8251EF18E5AE34008D7494 /* VeaconSDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC8251CD18E5AE34008D7494 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251CE18E5AE34008D7494 /* Foundation.framework */,
+				DC8251D018E5AE34008D7494 /* CoreGraphics.framework */,
+				DC8251D218E5AE34008D7494 /* UIKit.framework */,
+				DC8251F018E5AE34008D7494 /* XCTest.framework */,
+				30793172DA544FC091871C53 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC8251D418E5AE34008D7494 /* VeaconSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251DD18E5AE34008D7494 /* VLAppDelegate.h */,
+				DC8251DE18E5AE34008D7494 /* VLAppDelegate.m */,
+				DC8251E018E5AE34008D7494 /* Main_iPhone.storyboard */,
+				DC82520618E5D4C3008D7494 /* VLTableViewController.h */,
+				DC82520718E5D4C3008D7494 /* VLTableViewController.m */,
+				DC8251E918E5AE34008D7494 /* Images.xcassets */,
+				DC8251D518E5AE34008D7494 /* Supporting Files */,
+			);
+			path = VeaconSDKDemo;
+			sourceTree = "<group>";
+		};
+		DC8251D518E5AE34008D7494 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251D618E5AE34008D7494 /* VeaconSDKDemo-Info.plist */,
+				DC8251D718E5AE34008D7494 /* InfoPlist.strings */,
+				DC8251DA18E5AE34008D7494 /* main.m */,
+				DC8251DC18E5AE34008D7494 /* VeaconSDKDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC8251F618E5AE34008D7494 /* VeaconSDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251FC18E5AE34008D7494 /* VeaconSDKDemoTests.m */,
+				DC8251F718E5AE34008D7494 /* Supporting Files */,
+			);
+			path = VeaconSDKDemoTests;
+			sourceTree = "<group>";
+		};
+		DC8251F718E5AE34008D7494 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC8251F818E5AE34008D7494 /* VeaconSDKDemoTests-Info.plist */,
+				DC8251F918E5AE34008D7494 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC8251CA18E5AE34008D7494 /* VeaconSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC82520018E5AE34008D7494 /* Build configuration list for PBXNativeTarget "VeaconSDKDemo" */;
+			buildPhases = (
+				C12A8F74C0ED44C79F72742F /* Check Pods Manifest.lock */,
+				DC8251C718E5AE34008D7494 /* Sources */,
+				DC8251C818E5AE34008D7494 /* Frameworks */,
+				DC8251C918E5AE34008D7494 /* Resources */,
+				67FDD824ED2244D7A286044F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeaconSDKDemo;
+			productName = VeaconSDKDemo;
+			productReference = DC8251CB18E5AE34008D7494 /* VeaconSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC8251EE18E5AE34008D7494 /* VeaconSDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC82520318E5AE34008D7494 /* Build configuration list for PBXNativeTarget "VeaconSDKDemoTests" */;
+			buildPhases = (
+				DC8251EB18E5AE34008D7494 /* Sources */,
+				DC8251EC18E5AE34008D7494 /* Frameworks */,
+				DC8251ED18E5AE34008D7494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC8251F518E5AE34008D7494 /* PBXTargetDependency */,
+			);
+			name = VeaconSDKDemoTests;
+			productName = VeaconSDKDemoTests;
+			productReference = DC8251EF18E5AE34008D7494 /* VeaconSDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC8251C318E5AE34008D7494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Valensas;
+				TargetAttributes = {
+					DC8251EE18E5AE34008D7494 = {
+						TestTargetID = DC8251CA18E5AE34008D7494;
+					};
+				};
+			};
+			buildConfigurationList = DC8251C618E5AE34008D7494 /* Build configuration list for PBXProject "VeaconSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC8251C218E5AE34008D7494;
+			productRefGroup = DC8251CC18E5AE34008D7494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC8251CA18E5AE34008D7494 /* VeaconSDKDemo */,
+				DC8251EE18E5AE34008D7494 /* VeaconSDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC8251C918E5AE34008D7494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251EA18E5AE34008D7494 /* Images.xcassets in Resources */,
+				DC8251E218E5AE34008D7494 /* Main_iPhone.storyboard in Resources */,
+				DC8251D918E5AE34008D7494 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8251ED18E5AE34008D7494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251FB18E5AE34008D7494 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67FDD824ED2244D7A286044F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12A8F74C0ED44C79F72742F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC8251C718E5AE34008D7494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251DF18E5AE34008D7494 /* VLAppDelegate.m in Sources */,
+				DC8251DB18E5AE34008D7494 /* main.m in Sources */,
+				DC82520818E5D4C3008D7494 /* VLTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC8251EB18E5AE34008D7494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8251FD18E5AE34008D7494 /* VeaconSDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC8251F518E5AE34008D7494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC8251CA18E5AE34008D7494 /* VeaconSDKDemo */;
+			targetProxy = DC8251F418E5AE34008D7494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC8251D718E5AE34008D7494 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8251D818E5AE34008D7494 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC8251E018E5AE34008D7494 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8251E118E5AE34008D7494 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DC8251F918E5AE34008D7494 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC8251FA18E5AE34008D7494 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC8251FE18E5AE34008D7494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC8251FF18E5AE34008D7494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC82520118E5AE34008D7494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954C96E447094AD4B482CC0A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeaconSDKDemo/VeaconSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "VeaconSDKDemo/VeaconSDKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC82520218E5AE34008D7494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954C96E447094AD4B482CC0A /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeaconSDKDemo/VeaconSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "VeaconSDKDemo/VeaconSDKDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DC82520418E5AE34008D7494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeaconSDKDemo.app/VeaconSDKDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeaconSDKDemo/VeaconSDKDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VeaconSDKDemoTests/VeaconSDKDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DC82520518E5AE34008D7494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VeaconSDKDemo.app/VeaconSDKDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VeaconSDKDemo/VeaconSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "VeaconSDKDemoTests/VeaconSDKDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC8251C618E5AE34008D7494 /* Build configuration list for PBXProject "VeaconSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC8251FE18E5AE34008D7494 /* Debug */,
+				DC8251FF18E5AE34008D7494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC82520018E5AE34008D7494 /* Build configuration list for PBXNativeTarget "VeaconSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC82520118E5AE34008D7494 /* Debug */,
+				DC82520218E5AE34008D7494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC82520318E5AE34008D7494 /* Build configuration list for PBXNativeTarget "VeaconSDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC82520418E5AE34008D7494 /* Debug */,
+				DC82520518E5AE34008D7494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC8251C318E5AE34008D7494 /* Project object */;
+}

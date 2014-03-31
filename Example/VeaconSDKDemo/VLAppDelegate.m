@@ -36,7 +36,7 @@
 {
     // Override point for customization after application launch.
     
-    [VeaconSDK configureWithSecretKey:@"dab10749-90c8-4024-b3a0-42e35f875058"];
+    [VeaconSDK configureWithSecretKey:@"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"];
     
     return YES;
 }

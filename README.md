@@ -178,5 +178,5 @@ License
 See LICENSE file
 
 [veacon.com]:http://veacon.com
-[Veacon Portal]:http://veacon.valensas.com
+[Veacon Portal]:http://portal.veacon.com
 [CocoaPods]:http://cocoapods.org

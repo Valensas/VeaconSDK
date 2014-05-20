@@ -115,7 +115,7 @@ In order to detect Veacons around your application, you need to start Veacon mon
     }
 }
 ```
-##### Important note: If your application uses geolocation features, because apple restricts the total number of CLRegion objects that an application uses, monitoring may fail.
+##### Important note: If your application uses geolocation features, because Apple restricts the total number of CLRegion objects that an application uses, monitoring may fail.
 #### Veacon Mode
 You may want to turn your device into a Veacon device. After you turn your device into a Veacon, you can assign scenarios to it from Veacon portal with its device name. In order to enable Veacon Mode, add the following lines of code to your application:
 ```c
@@ -178,5 +178,5 @@ License
 See LICENSE file
 
 [veacon.com]:http://veacon.com
-[Veacon Portal]:http://veacon.valensas.com
+[Veacon Portal]:http://portal.veacon.com
 [CocoaPods]:http://cocoapods.org

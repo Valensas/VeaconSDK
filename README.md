@@ -4,7 +4,7 @@ Veacon is a low-powered, low-cost iBeacon transmitter that can notify nearby dev
 
 Current Version
 ----
-0.1.1
+0.1.2
 
 Installation with CocoaPods
 -----------
@@ -12,7 +12,7 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 #### Podfile
 
 ```podfile
-pod 'VeaconSDK', '~> 0.1'
+pod 'VeaconSDK'
 ```
 Requirements
 -------

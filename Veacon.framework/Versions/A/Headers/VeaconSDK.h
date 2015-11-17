@@ -41,5 +41,6 @@ extern NSString * const VLVeaconName;
 + (void) setUserId:(NSString*)userId andInfo:(NSDictionary*)userInfo;
 
 + (void) setDelegate:(id<VeaconDelegate>)delegate;
++ (id<VeaconDelegate>)delegate;
 
 @end

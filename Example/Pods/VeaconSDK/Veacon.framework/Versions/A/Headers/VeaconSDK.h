@@ -36,6 +36,11 @@ extern NSString * const VLVeaconName;
 + (BOOL) loggingMode;
 + (void) setLoggingMode:(BOOL)logging;
 
++ (void) setLanguagePreferences:(NSArray*)languagePreferences;
+
++ (void) setUserId:(NSString*)userId andInfo:(NSDictionary*)userInfo;
+
 + (void) setDelegate:(id<VeaconDelegate>)delegate;
++ (id<VeaconDelegate>)delegate;
 
 @end

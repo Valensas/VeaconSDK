@@ -7,6 +7,7 @@
 //
 
 #import "VLTableViewController.h"
+#import <Veacon/VeaconMapViewController.h>
 
 @interface VLTableViewController ()
 
@@ -29,6 +30,10 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveVeaconModeUpdate:) name:VLVeaconModeUpdated object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveVeaconNameUpdate:) name:VLVeaconNameUpdated object:nil];
+    
+    // Start monitoring
+    [self.monitoringSwitch setOn:YES];
+    [self monitoring:self.monitoringSwitch];
 }
 
 - (void) receiveVeaconModeUpdate:(NSNotification *) notification{
@@ -50,26 +55,10 @@
     NSLog(@"Your device has been added to Veacon Portal as %@",[[notification userInfo] objectForKey:VLVeaconName]);
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    // Return the number of sections.
-    return 2;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    if(section==0){
-        return 1;
-    }else{
-        return 2;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section == 2 && indexPath.row == 0){
+        VeaconMapViewController *mapViewController = [VeaconMapViewController new];
+        [self.navigationController pushViewController:mapViewController animated:YES];
     }
 }
 

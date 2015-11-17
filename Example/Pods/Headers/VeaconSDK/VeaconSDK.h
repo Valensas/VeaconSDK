@@ -1,1 +1,0 @@
-../../VeaconSDK/Veacon.framework/Versions/A/Headers/VeaconSDK.h

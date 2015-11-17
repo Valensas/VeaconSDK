@@ -21,6 +21,7 @@
 		DC8251FB18E5AE34008D7494 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8251F918E5AE34008D7494 /* InfoPlist.strings */; };
 		DC8251FD18E5AE34008D7494 /* VeaconSDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC8251FC18E5AE34008D7494 /* VeaconSDKDemoTests.m */; };
 		DC82520818E5D4C3008D7494 /* VLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC82520718E5D4C3008D7494 /* VLTableViewController.m */; };
+		DCDC480C1BFB6EA1008C2430 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCDC480B1BFB6EA1008C2430 /* Launch Screen.storyboard */; };
 		F767B8993D144BC193BE297D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30793172DA544FC091871C53 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +37,8 @@
 
 /* Begin PBXFileReference section */
 		30793172DA544FC091871C53 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		954C96E447094AD4B482CC0A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		4693110DCA657E37F5B3FF31 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		91415FD5E0CBFEACEDD36202 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DC8251CB18E5AE34008D7494 /* VeaconSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeaconSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8251CE18E5AE34008D7494 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC8251D018E5AE34008D7494 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +58,7 @@
 		DC8251FC18E5AE34008D7494 /* VeaconSDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeaconSDKDemoTests.m; sourceTree = "<group>"; };
 		DC82520618E5D4C3008D7494 /* VLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLTableViewController.h; sourceTree = "<group>"; };
 		DC82520718E5D4C3008D7494 /* VLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLTableViewController.m; sourceTree = "<group>"; };
+		DCDC480B1BFB6EA1008C2430 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33BAA86AD5137B08816B9E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4693110DCA657E37F5B3FF31 /* Pods.debug.xcconfig */,
+				91415FD5E0CBFEACEDD36202 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC8251C218E5AE34008D7494 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +102,7 @@
 				DC8251F618E5AE34008D7494 /* VeaconSDKDemoTests */,
 				DC8251CD18E5AE34008D7494 /* Frameworks */,
 				DC8251CC18E5AE34008D7494 /* Products */,
-				954C96E447094AD4B482CC0A /* Pods.xcconfig */,
+				33BAA86AD5137B08816B9E5E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +137,7 @@
 				DC82520718E5D4C3008D7494 /* VLTableViewController.m */,
 				DC8251E918E5AE34008D7494 /* Images.xcassets */,
 				DC8251D518E5AE34008D7494 /* Supporting Files */,
+				DCDC480B1BFB6EA1008C2430 /* Launch Screen.storyboard */,
 			);
 			path = VeaconSDKDemo;
 			sourceTree = "<group>";
@@ -239,6 +252,7 @@
 			files = (
 				DC8251EA18E5AE34008D7494 /* Images.xcassets in Resources */,
 				DC8251E218E5AE34008D7494 /* Main_iPhone.storyboard in Resources */,
+				DCDC480C1BFB6EA1008C2430 /* Launch Screen.storyboard in Resources */,
 				DC8251D918E5AE34008D7494 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C12A8F74C0ED44C79F72742F /* Check Pods Manifest.lock */ = {
@@ -417,7 +431,7 @@
 		};
 		DC82520118E5AE34008D7494 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 954C96E447094AD4B482CC0A /* Pods.xcconfig */;
+			baseConfigurationReference = 4693110DCA657E37F5B3FF31 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -431,7 +445,7 @@
 		};
 		DC82520218E5AE34008D7494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 954C96E447094AD4B482CC0A /* Pods.xcconfig */;
+			baseConfigurationReference = 91415FD5E0CBFEACEDD36202 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

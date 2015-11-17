@@ -1,5 +1,5 @@
 PODS:
-  - VeaconSDK (0.1.1)
+  - VeaconSDK (0.3)
 
 DEPENDENCIES:
   - VeaconSDK (from `https://github.com/Valensas/VeaconSDK.git`)
@@ -8,7 +8,12 @@ EXTERNAL SOURCES:
   VeaconSDK:
     :git: https://github.com/Valensas/VeaconSDK.git
 
-SPEC CHECKSUMS:
-  VeaconSDK: 984de259bfb114b0df020ec6598814bea401ea6f
+CHECKOUT OPTIONS:
+  VeaconSDK:
+    :commit: e0c2a9a3b6ba79190a37fc03d864753b4fbc7163
+    :git: https://github.com/Valensas/VeaconSDK.git
 
-COCOAPODS: 0.29.0
+SPEC CHECKSUMS:
+  VeaconSDK: ccee90fe26324db8d51c86706a703a452c63dd34
+
+COCOAPODS: 0.38.2

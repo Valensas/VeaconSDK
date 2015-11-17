@@ -4,7 +4,7 @@ Veacon is a low-powered, low-cost iBeacon transmitter that can notify nearby dev
 
 Current Version
 ----
-0.2.2
+0.3
 
 Installation with CocoaPods
 -----------
@@ -49,6 +49,15 @@ Now, we can initialize the VeaconSDK. In order to initialize VeaconSDK, you must
 Now, your application is ready to receive Veacon signals. The only thing you need to do in order to receive signals is enabling the detection mode.
 
 There are a couple of optional configurations you can use in your entire application. You can open or close the logging mode and you can set a delegate object in order to receive custom actions you entered from the Veacon portal. You can also get notified when the user disables device’s Bluetooth.
+#### Map Feature
+Map feature is used to display a map and Veacon locations for indoor navigation. You can add maps to your project from [veacon.com]. To enable this feature on your iOS project, use the following lines:
+```c
+#import <Veacon/VeaconMapViewController.h>
+```
+```c
+VeaconMapViewController *mapViewController = [VeaconMapViewController new];
+[self.navigationController pushViewController:mapViewController animated:YES];
+```
 #### Logging Mode
 Logging mode is used for debugging. When the logging mode enabled, each time application sees a Veacon change around it, Veacon Portal sends a custom event which contains information about the Veacon. By this way, you can simply debug your application without creating scenarios on Veacon Portal.
 

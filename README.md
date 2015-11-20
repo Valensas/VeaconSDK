@@ -4,7 +4,7 @@ Veacon is a low-powered, low-cost iBeacon transmitter that can notify nearby dev
 
 Current Version
 ----
-0.3.2
+0.3.3
 
 Installation with CocoaPods
 -----------
@@ -62,6 +62,10 @@ If any connection problem occurs or you do not have any maps created in Veacon p
 ```c
 - (void) veaconMapViewController:(VeaconMapViewController*)veaconMapViewController numberOfMapsInServiceResponse:(NSInteger)count;
 - (void) veaconMapViewController:(VeaconMapViewController*)veaconMapViewController serviceRespondedWithErrorCode:(NSInteger)code;
+```
+You can retry the service call by the following method
+```c
+-(void)retryServiceCall;
 ```
 #### Logging Mode
 Logging mode is used for debugging. When the logging mode enabled, each time application sees a Veacon change around it, Veacon Portal sends a custom event which contains information about the Veacon. By this way, you can simply debug your application without creating scenarios on Veacon Portal.

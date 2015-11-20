@@ -37,4 +37,6 @@
 
 @property (strong, nonatomic) id<VeaconMapViewControllerDelegate> delegate;
 
+- (void) retryServiceCall;
+
 @end

@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class VeaconMapViewController;
+
+@protocol VeaconMapViewControllerDelegate <NSObject>
+@required
+- (void) veaconMapViewController:(VeaconMapViewController*)veaconMapViewController numberOfMapsInServiceResponse:(NSInteger)count;
+- (void) veaconMapViewController:(VeaconMapViewController*)veaconMapViewController serviceRespondedWithErrorCode:(NSInteger)code;
+@optional
+@end
+
 @interface VeaconMapViewController : UIViewController
 
 @property (strong, nonatomic) NSString *titleString;
@@ -23,5 +32,9 @@
 @property (strong, nonatomic) UIColor *indicatorSelectedTextColor;
 @property (strong, nonatomic) UIColor *chevronDownColor;
 @property (strong, nonatomic) UIColor *chevronRightColor;
+
+@property (nonatomic) BOOL autoChangeMapsDisabled;
+
+@property (strong, nonatomic) id<VeaconMapViewControllerDelegate> delegate;
 
 @end

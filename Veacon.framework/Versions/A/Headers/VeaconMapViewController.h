@@ -35,6 +35,8 @@
 
 @property (nonatomic) BOOL autoChangeMapsDisabled;
 
+@property (nonatomic) BOOL letterIndicators;
+
 @property (strong, nonatomic) id<VeaconMapViewControllerDelegate> delegate;
 
 - (void) retryServiceCall;

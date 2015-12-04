@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = "VeaconSDK"
-  s.version      = "0.3.3"
+  s.version      = "0.3.4"
   s.homepage     = "http://www.veacon.com"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Valensas" => "info@veacon.com" }
   s.summary      = "VeaconSDK"
 
   s.platform     = :ios, '6.0'
-  s.source       = { :git => "https://github.com/Valensas/VeaconSDK.git", :tag => "0.3.3" }
+  s.source       = { :git => "https://github.com/Valensas/VeaconSDK.git", :tag => "0.3.4" }
 
   s.preserve_paths      = 'Veacon.framework'
   s.public_header_files = 'Veacon.framework/Versions/A/Headers/*.h'

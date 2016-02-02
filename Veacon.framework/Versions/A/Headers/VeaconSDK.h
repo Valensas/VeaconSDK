@@ -40,6 +40,10 @@ extern NSString * const VLVeaconName;
 
 + (void) setUserId:(NSString*)userId andInfo:(NSDictionary*)userInfo;
 
++(void)setProximityModeToManualWithImmediateAccuracy:(CLLocationAccuracy)immediateAccuracy nearAccuracy:(CLLocationAccuracy)nearAccuracy;
+
++(void)setProximityModeToAuto;
+
 + (void) setDelegate:(id<VeaconDelegate>)delegate;
 + (id<VeaconDelegate>)delegate;
 

@@ -4,7 +4,7 @@ Veacon is a low-powered, low-cost iBeacon transmitter that can notify nearby dev
 
 Current Version
 ----
-0.3.4
+0.3.5
 
 Installation with CocoaPods
 -----------
